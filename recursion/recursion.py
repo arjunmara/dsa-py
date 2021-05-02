@@ -60,22 +60,12 @@
 # print(sum(2))
 
 
-# Recursice vs iterative
-
-def powerOfTwo(n):
-    # recursive approach
-    # if num == 0:
-    #     return 1
-    # else:
-    #     power = powerOfTwo(num-1)
-    #     return power*2
-    # iterative approach
-    i = 0
-    power = 1
-    while i < n:
-        power = power * 2
-        i += 1
-    return power
+# Recursive vs iterative
 
 
-print(powerOfTwo(3))
+def
+
+# in recursive function, infinite recursion results in system crash but infinite iteration consumes CPU cycles.
+# Space efficient => Iteration because no stack memory is required in case of iteration
+# Time efficient => Iteration because no popping and pushing into the stack which makes recursion less time efficient
+# Easy to code? => Recursion (if you know what you are doing.) We especially use it when we know the problem can be divided into similar sub problems.
