@@ -157,11 +157,20 @@
 # print(cumsum(54321))
 
 
-def test(n):
-    if n == 0:
-        return 'hey'
-    else:
-        return 'this ' + test(n-1)
+# def test(n):
+#     if n == 0:
+#         return 'hey'
+#     else:
+#         return 'this ' + test(n-1)
 
 
-print(test(2))
+# print(test(2))
+
+# def word_split(phr, list_of_words, output = None):
+#     if output is None:
+#         output = []
+#     for word in list_of_words:
+#         if phrase.startswith(word):
+#             output.append(word)
+#             return word_split(pharase[len(word:)], list_of_words, output)
+#     return output
