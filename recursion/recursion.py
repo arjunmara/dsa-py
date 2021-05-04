@@ -174,3 +174,73 @@
 #             output.append(word)
 #             return word_split(pharase[len(word:)], list_of_words, output)
 #     return output
+
+
+# How to find the sum of digits of a positive integer number using recursion?
+# def sumOfDigits(num):
+#     assert num >= 0 and int(num) == num, 'Please enter a positive integer!'
+#     if(num == 0):
+#         return 0
+
+#     else:
+#         return int(num % 10) + sumOfDigits(int(num/10))
+
+
+# print(sumOfDigits(112))
+
+
+# reverse a string using recursion
+# def rev(s):
+#     # assert str(s) == s, 'Please enter a string.'
+#     if(len(str(s)) <= 1):
+#         return s
+#     else:
+#         return rev(s[1:])+s[0]
+
+
+# print(rev(34))
+
+# calculate the power of a number using recursion:
+
+# def power(base, exp):
+#     assert exp >= 0 and int(
+#         exp) == exp, 'Please enter a positive integer exponential.'
+#     if(exp == 0):
+#         return 1
+#     if(exp == 1):
+#         return base
+#     else:
+#         return base * power(base, exp-1)
+
+
+# print(power(-2, 4))
+
+# find out all the possible permutations of the string.
+# note: if a character is repeated treat each occurence as distinct.
+
+# def permute(s):
+#     out = []
+#     if len(s) == 1:
+#         out = [s]
+#     else:
+#         # for every letter in string
+#         for i, let in enumerate(s):
+#             # for every permutation resulting for step 2 and 3
+#             for perm in permute(s[:i] + s[i+1:]):
+#                 # Add it to the output
+#                 out += [let+perm]
+#     return out
+
+
+# print(permute('arjun'))
+import math
+
+
+def findMax(arr, n):
+    if n == 1:
+        return arr[0]
+    else:
+        return max(arr[n-1], findMax(arr, n-1))
+
+
+print(findMax([11, 4, 12, 7], 4))
